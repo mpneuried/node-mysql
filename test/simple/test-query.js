@@ -131,7 +131,7 @@ test(function _handlePacket() {
     return r;
   }
 
-  assert.deepEqual(typeCast(Query.FIELD_TYPE_TIMESTAMP, '2010-10-05 06:23:42'), new Date('2010-10-05 06:23:42Z'));
+  assert.deepEqual(typeCast(Query.FIELD_TYPE_TIMESTAMP, '2010-10-05 06:23:42'), new Date('2010-10-05 04:23:42Z'));
 
   assert.deepEqual(typeCast(Query.FIELD_TYPE_TIMESTAMP, '2010-10-05'), new Date('2010-10-05Z'));
   assert.deepEqual(typeCast(Query.FIELD_TYPE_DATE, '2010-10-05'), new Date('2010-10-05Z'));
